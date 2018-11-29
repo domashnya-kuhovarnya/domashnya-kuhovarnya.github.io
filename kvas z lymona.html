@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-UTF-8">
+<title>Кулінарні рецепти від найкращої мами</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="favicon.ico"; type="image/x-icon">
+</head>
+<body>
+<table width="752" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><div style="position:absolute; margin-top:72px; margin-left:84px;"><img src="images/logotyp.png" alt=""></div><div class="company_name">Домашня куховарня</div>
+    <img src="images/shapka.jpg" alt="" width="752" height="347"></td>
+  </tr>
+  <tr>
+    <td background="images/forma3.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="6"><img src="images/forma4.jpg" alt="" width="6" height="38"></td>
+        <td><table border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="menu"><a href="holovna.html">Головна</a></td>
+            <td width="5"><img src="images/znachok.jpg" alt="" width="5" height="38"></td>
+            <td class="menu"><a href="recepty.html">Рецепти</a></td>
+            <td width="5"><img src="images/znachok.jpg" alt="" width="5" height="38"></td>
+            <td class="menu"><a href="porady.html">Поради</a></td>
+			<td width="5"><img src="images/znachok.jpg" alt="" width="5" height="38"></td>
+            <td class="menu"><a href="avtor.html">Автор</a></td>
+          </tr>
+        </table></td>
+        <td width="6"><img src="images/forma5.jpg" alt="" width="6" height="38"></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td class="cbg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="203" valign="top">
+        <div class="lmenu"><article class="l_title">Рецепти на сайті</article>
+		<ul class="nav">
+            <li><a href="holodni zakusky.html">Холодна закуска</a></li>
+            <li><a href="pershi stravy.html">Перші страви</a></li>
+            <li><a href="drugi stravy.html">Другі страви</a></li>
+			<li><a href="vypichka.html">Випічка</a></li>
+			<li><a href="desertni stravy.html">Десертні страви</a></li>
+			<li><a href="napoi.html">Напої</a></li>
+        </ul>
+          <img src="images/forma.jpg" alt=""></div>
+		  <table id="calendar2">
+  <thead>
+    <tr><td>‹<td colspan="5"><td>›
+    <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+  <tbody>
+</table>
+</td>
+		  
+        <td class="body_txt"><h1>Квас з лимона</h1>
+          <p><h4>Інгридієнти:</h4></p>
+		  <p><ul class="recepty">
+		  <li>2.5 л чистої води,</li>
+          <li>1 лимон,</li>
+          <li>250 мл меду,</li>
+		  <li>кілька зерняток рису.</li>
+          </ul></p>
+          <p><h4>Спосіб приготування:</h4></p>
+		  <p>Налийте воду в банку ємністю 3 літри. Влийте свіжовичавлений і проціджений лимонний сік. Потім додайте мед і ретельно розмішайте, щоб мед повністю розчинився. В кінці додайте кілька зерняток рису. Вони дадуть нам дріжджі зі своєї поверхні. Смак вийде надзвичайно вишуканий, і зовсім не буде нагадувати спирт. Накрити банку марлею і залишити на 12 годин. По закінченню часу квас буде готовий. А якщо ви дасте йому постояти ще, він стане більш прозорою.</p>
+		 </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><img src="images/linia2.jpg" alt="" width="752" height="5"></td>
+  </tr>
+  <footer>
+  <tr>
+    <td class="bottom_menu"><a href="Головна.html">Головна Сторінка</a>  | <a href="Рецепти.html">Рецепти</a> |   <a href="Поради.html">Поради</a> |  <a href="Автор.html">Автор</a></td>
+  </tr>
+  <tr>
+    <td class="bottom_addr">&copy; 2018 Домашня куховарня. All Rights Reserved</td>
+  </tr>
+  </footer>
+</table>
+<script>
+function Calendar2(id, year, month) {
+var Dlast = new Date(year,month+1,0).getDate(),
+    D = new Date(year,month,Dlast),
+    DNlast = new Date(D.getFullYear(),D.getMonth(),Dlast).getDay(),
+    DNfirst = new Date(D.getFullYear(),D.getMonth(),1).getDay(),
+    calendar = '<tr>',
+    month=["Січень","Лютий","Березень","Квітень","Травень","Червень","Липень","Серпень","Вересень","Жовтень","Листопад","Грудень"];
+if (DNfirst != 0) {
+  for(var  i = 1; i < DNfirst; i++) calendar += '<td>';
+}else{
+  for(var  i = 0; i < 6; i++) calendar += '<td>';
+}
+for(var  i = 1; i <= Dlast; i++) {
+  if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
+    calendar += '<td class="today">' + i;
+  }else{
+    calendar += '<td>' + i;
+  }
+  if (new Date(D.getFullYear(),D.getMonth(),i).getDay() == 0) {
+    calendar += '<tr>';
+  }
+}
+for(var  i = DNlast; i < 7; i++) calendar += '<td>&nbsp;';
+document.querySelector('#'+id+' tbody').innerHTML = calendar;
+document.querySelector('#'+id+' thead td:nth-child(2)').innerHTML = month[D.getMonth()] +' '+ D.getFullYear();
+document.querySelector('#'+id+' thead td:nth-child(2)').dataset.month = D.getMonth();
+document.querySelector('#'+id+' thead td:nth-child(2)').dataset.year = D.getFullYear();
+if (document.querySelectorAll('#'+id+' tbody tr').length < 6) {  // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
+    document.querySelector('#'+id+' tbody').innerHTML += '<tr><td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;';
+}
+}
+Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
+// переключатель минус месяц
+document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
+  Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1);
+}
+// переключатель плюс месяц
+document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
+  Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
+}
+</script>
+</body>
+</html>

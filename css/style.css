@@ -1,0 +1,140 @@
+body {
+	margin:0;
+	padding:0;
+	background-color: #e3e3e3;
+	background-image: url(../images/fon.jpg);
+	background-repeat: round;
+	background-position: top;
+}
+p,td { font-family:Arial, Helvetica, sans-serif; margin-top: 0px;}
+p img {float:left;}
+a img{border:0;}
+a{
+	color: #b51107;
+	text-decoration: underline;
+}
+a:hover{
+	color: #F72B20;
+	text-decoration: underline;
+}
+a.hidden {text-decoration: none;color: #000000;cursor:default;}
+form {margin:0;padding:0;}
+ul.nav {margin-left:20px;margin-top:0px;padding:1px;list-style-type: none;line-height: 16px;}
+h1 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+	margin: 0px;
+	padding-bottom: 8px;
+}
+.bottom_addr {
+	font-size: 11px;
+	color: black;
+	padding-top: 4px;
+	padding-bottom: 8px;
+	font-family: Tahoma, Arial;
+	text-align: center;
+}
+.bottom_addr a {text-decoration: none;}
+.bottom_addr a:hover {text-decoration: underline;}
+.bottom_menu {color: #000000;text-align: center;padding-top: 4px;padding-bottom: 4px;	font-size: 12px;font-family: Tahoma, Arial;}
+.bottom_menu a {color: #000000;text-decoration: none;}
+.bottom_menu a:hover {color: #000000;text-decoration: underline;}
+.menu {color: #251404; list-style:none;background-image: url(../images/btn_bg.gif);background-repeat: repeat-x;font-weight: bold;padding-right: 15px;padding-left: 15px;white-space: nowrap;font-family: Tahoma, Arial;	font-size: 12px;}
+.menu a{text-decoration: none;color: #251404;}
+.cbg {background-color: #FFFFFF;background-image: url(../images/gradient.jpg);background-repeat: no-repeat;background-position: top;}
+.menu a:hover {color: #60330B;	text-decoration: none;}
+.lmenu{
+	background-image: url(../images/linia.jpg);
+	background-repeat: repeat-y;
+	margin-left: 8px;
+	margin-top: 7px;
+	margin-bottom: 3px;
+}
+.lmenu p{margin: 8px;font-size: 12px;font-family: Tahoma, Arial;text-align: justify;white-space: pre-line}
+.l_title{font-size:12px;font-family: Tahoma, Arial;font-weight: bold;color: #8c180b;background-image: url(../images/forma2.jpg);background-repeat: no-repeat;height: 14px;width: 195px;text-align: center;vertical-align: middle;padding-top: 8px;padding-bottom: 8px;}
+.body_txt {color: #000000;text-align: justify;vertical-align: top;font-family: Tahoma, Arial;font-size: 14px;padding-top: 12px;padding-right: 15px;padding-bottom: 12px;padding-left: 15px;white-space: pre-line}
+.company_name {font-size: 22px;font-weight: normal;text-transform: none;color: #3f1800;font-family: Impact fantasy;position: absolute;margin-top: 182px;margin-left: 84px;}
+.login_form {background-image: url(../images/login-form-bg.gif);background-repeat: repeat-x;height: 20px;width: 110px;border-width: 1px;border-style: solid;font-size: 11px;padding-top: 3px;padding-left: 1px;}
+.thumb figure {
+  width: 23%;
+  margin: 1%;
+  display: inline-block;
+}
+
+.thumb img {
+	border: 3px solid #e6ab5c;
+    border-radius: 35px 7px;
+    width: 100%;
+}
+
+.thumb figcaption a{
+  text-align: center;
+  text-decoration: none;
+  color: #251404;
+  font-family: Tahoma, Arial;
+  font-size: 12px;
+  list-style:none;
+  background-image: url(../images/btn_bg.gif);
+  background-repeat: repeat-x;
+  font-weight: bold;
+  padding-right: 11px;
+  padding-left: 3px;
+  white-space: nowrap;
+}
+.thumb figcaption a:hover{color: #60330B;	text-decoration: none;text-align: center;}
+.nav li a{
+    margin: 0;
+    padding: 12px 0 0;
+	float:left;
+    width: 169px;
+    display: block;
+    color: #251404;
+    font-family: Tahoma, Arial;
+    font-size: 12px;
+	font-weight:bold;
+     list-style:none;
+    text-align: left;
+    text-decoration: none;
+    height: 20px;
+}
+.nav li a:hover{color: #60330B;	text-decoration: none;text-align: left;}
+#calendar2 {
+  width: 100%;
+  font: monospace;
+  line-height: 1.2em;
+  font-size: 15px;
+  text-align: center;
+}
+#calendar2 thead tr:last-child {
+  font-size: small;
+  color: rgb(85, 85, 85);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+  color: rgb(50, 50, 50);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar2 tbody td {
+  color: rgb(44, 86, 122);
+}
+#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
+  color: rgb(231, 140, 92);
+}
+#calendar2 tbody td.today {
+  background: rgb(220, 0, 0);
+  color: #fff;
+}
+#zvaz{
+	text-decoration: none;
+
+}
+ul.recepty li{
+	list-style-type: scroll;line-height: 5px;text-align: left;
+}
+.img-circle {
+    border: 3px solid white;
+    border-radius: 40%;
+	float:right;
+}
